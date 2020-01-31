@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<link rel="stylesheet" href="StyleSheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<title>La Doña - Yuma</title>
+</head>
+	
+<body>
+	
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active, navFormat" ><img align="left" src="../Icons/home-outline-filled/32x32.png">Home</a>
+		<a href="#menu" class="navFormat"><img align="left" src="../Icons/eat-outline-filled/32x32.png">Menu</a>
+		<a href="#contact" class="navFormat"><img align="left" src="../Icons/mail-var-outline-filled/32x32.png">Contact Us</a>
+		<a href="#about" class="navFormat">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	
+	<div class="slideshow">
+		<img class="mySlides" src="../images/agua-frescas-jamaica-horchata-cucumber-la-dona-side-view.jpg" style="width:100%">
+		<img class="mySlides" src="../images/sopes-side view.jpg" style="width:100%">
+		<img class="mySlides" src="../images/tacos3.jpg" style="width:100%">
+		<img class="mySlides" src="../images/tacos6.jpg" style="width:100%">
+		<img class="mySlides" src="../images/tacos8.jpg" style="width:100%">
+	</div>
+	
+	<script>
+	var myIndex = 0;
+	carousel();
+	
+	function carousel(){
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i <x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 3500);//change every 3.5 seconds
+	}
+	</script>
+	
+	
+	<div class="single">
+		<img src="../images/LA DONA LOGO.png" alt="La Doña logo. Traditional mexican dressed woman with a canary yellow dress; purple, blue, orange, and green stripes on her blouse and dress. A purple flower and bow tie on her brown hair, with gold bracelets and earrings. Holding a plate of tacos, nachos, and salsa. In front of a red circle and yellow square background. " style="width:50%; height:50%;">
+	</div>
+	
+	<div class="single">
+	<div class="roundedge">Menu<a id="menu"></a>
+	</div>
+	</div>
+	
+	<div class="single">
+	<table style="width:100%;">
+		<tr>
+			<th>Lunch</th>
+			<th>Price</th>
+			<th>Dinner</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>Enchiladas</td>
+			<td>7.99</td>
+			<td>Enchilada Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Gorditas</td>
+			<td>7.99</td>
+			<td>Gordita Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Tamales</td>
+			<td>7.99</td>
+			<td>Tamale Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Tacos</td>
+			<td>7.99</td>
+			<td>Taco Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Nachos</td>
+			<td>7.99</td>
+			<td>Nacho Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Burrito</td>
+			<td>7.99</td>
+			<td>Burrito Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Roasted Chicken</td>
+			<td>7.99</td>
+			<td>Roasted Chicken Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Sopes</td>
+			<td>7.99</td>
+			<td>Sopes Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Fish</td>
+			<td>7.99</td>
+			<td>Fish Platter</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td><b>Cocktail Happy Hour</b></td>
+			<td>4.99</td>
+			<td><b>Cocktails</b></td>
+			<td>7.99</td>
+		</tr>
+		<tr>
+			<td>Side of Rice</td>
+			<td>1.99</td>
+			<td>Party Size of Rice</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Side of Beans</td>
+			<td>1.99</td>
+			<td>Party Size of Beans</td>
+			<td>9.99</td>
+		</tr>
+		<tr>
+			<td>Side of Corn</td>
+			<td>1.99</td>
+			<td>Corn on the Cob></td>
+			<td>3.99</td>
+		</tr>
+		<tr>
+			<td>Three Tortillas Extra</td>
+			<td>1.00</td>
+			<td>Dozen Tortillas</td>
+			<td>2.99</td>
+		</tr>
+		<tr>
+			<td>Side of Salsa</td>
+			<td>0.99</td>
+			<td>Jar of Salsa</td>
+			<td>4.99</td>
+		</tr>
+	</table>
+	</div>
+	
+	<div class="single">
+	<div class="roundedge">About Us<a id="about"></a>
+	</div>
+	</div>
+	
+	<div class="single">
+		<img src="../images/azmountain.jpg" alt="Mountains at Telegraph Pass Trail in Yuma Arizona.">
+		<p>Located in the Fortuna Foothills in Sunny Yuma Arizona, La Doña is an Authentic Mexican restaurant using the home recipes of [LOCATION] born [CHEF]. [CHEF] has been cooking in the [AREA] at restuarants such as [RESTAURANTS] spanning over [NUMBER] years of experience in the restuarant business. Now the time has come for [CHEF] to showcase to Yuma what she has learned over the last [NUMBER] years along with her Mexican heritage to provide high quality food at competitive pricing!<br> We are also going to be offering the largest selection of Tequilas and Spirits this side of the border! So whether you are celebrating a quinceñera or a wedding, we can cater you here at our place or yours!</p>
+	</div>
+	
+	
+	<div class="single">
+	<div class="roundedge">Contact Us<a id="contact"></a>
+	</div>
+	</div>
+	
+
+
+	<div class="double">
+		<p>11720 Foothills Blvd<br>Unit C3<br>Yuma AZ 85367<br>928-304-8372<br><b>Mon - Sat:</b> 6am - 9pm<br><b>Sun:</b> 6am - 6pm</p>
+	</div>
+	<div class="double">
+		<p>Follow us on Social Media!<br> <a href="https://www.facebook.com/ladonayuma" target="_blank" class='fab fa-facebook' style="color:#3b5998;font-size:25px"></a><br><br><a href="https://www.instagram.com/ladonayuma" target="_blank" class='fab fa-instagram' style="color:#ed1a1a;font-size:25px;"></a></p>
+	</div>
+
+</body>
+
+<script>
+function myFunction(){
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav"){
+		x.className += " responsive";
+	} else {x.className = "topnav";
+	}
+}
+</script>
